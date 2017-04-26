@@ -1,4 +1,4 @@
-$LOAD_PATH.push('/home/yamamoto/study')
+$LOAD_PATH.push('~/ruby_study')
 require 'active_support'
 require 'active_support/core_ext'
 require 'refinements'
@@ -46,7 +46,7 @@ else
   end
 
   if Object.const_get(klass).respond_to?(:limit) && c.to_i > Object.const_get(klass).limit
-    p "ERROR! limit　over (limit #{Object.const_get(klass).limit})"
+    p "ERROR! limit over (limit #{Object.const_get(klass).limit})"
     exit
   end
 
